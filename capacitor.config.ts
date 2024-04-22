@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'chat-app-ionic',
+  appId: 'io.ionic.QuePasa.victor',
+  appName: 'QuéPasa',
   webDir: 'www'
 };
 
