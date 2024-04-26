@@ -8,31 +8,8 @@ import { ChatService } from '../../services/chat.service';
 })
 export class ChatComponent  implements OnInit {
 
-  public message: string = '';
-  public messages: any = [];
+  constructor() {}
 
-  ngOnInit(): void {
-    this.listMessages();
-      
-  }
-  constructor(private chatService: ChatService){
-
-  }
-
-  public sendMessage(){
-    this.chatService.sendMessage(this.message);
-    this.messages.push(this.message);
-    this.message = '';
-
-  }
-
-  public listMessages() {
-    this.chatService.listMessages().subscribe((data: any) => {
-      console.log(data);
-      this.messages.push(data.data);
-
-    })
-    
-  }
+  ngOnInit(): void {}
 
 }

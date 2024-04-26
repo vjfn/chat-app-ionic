@@ -11,6 +11,10 @@ import { ChatComponent } from './components/chat/chat.component';
 //Importamos SocketIoModule para tenerlo disponible en toda la app
 import { SocketIoConfig, SocketIoModule } from 'ngx-socket-io';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ChatBoxComponent } from './components/chat-box/chat-box.component';
+import { ChatUserListComponent } from './components/chat-user-list/chat-user-list.component';
 
 //Configuracion de SocketIo, cambiar el puerto segun necesidad.
 const config: SocketIoConfig = {url: 'http://localhost:4000', options:{}};
@@ -20,7 +24,11 @@ const config: SocketIoConfig = {url: 'http://localhost:4000', options:{}};
 @NgModule({
   declarations: [
     AppComponent,
-    ChatComponent
+    ChatComponent,
+    LoginComponent,
+    NavbarComponent,
+    ChatBoxComponent,
+    ChatUserListComponent
   ],
   imports: [
     BrowserModule, 

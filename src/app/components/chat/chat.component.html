@@ -1,10 +1,5 @@
-<div class="container mt-5" *ngIf="messages">
-  <ul *ngFor="let message of messages" class="list-group">
-      <li class="list-group-item">{{message}}</li>
-    </ul>
+<app-navbar></app-navbar>
+<div class='user-list-chat-box-container'>
+    <app-chat-user-list></app-chat-user-list>
+    <app-chat-box></app-chat-box>
 </div>
-
-<form>
-  <input type="text" name="message" [(ngModel)]="message">
-  <button (click)="sendMessage()">Send</button>
-</form>
