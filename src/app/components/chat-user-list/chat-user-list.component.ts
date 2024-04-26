@@ -5,7 +5,7 @@ import { ChatBoxService } from '../../services/chat-box.service';
 @Component({
   selector: 'app-chat-user-list',
   templateUrl: './chat-user-list.component.html',
-  styleUrl: './chat-user-list.component.css'
+  styleUrl: './chat-user-list.component.scss'
 })
 export class ChatUserListComponent {
 
